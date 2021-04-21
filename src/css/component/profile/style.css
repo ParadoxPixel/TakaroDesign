@@ -1,0 +1,8 @@
+.profile {
+    color: #666;
+    @apply flex items-center gap-1.5 relative
+}
+
+.profile img {
+    @apply h-7 w-7 rounded-full
+}

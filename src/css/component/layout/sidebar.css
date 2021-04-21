@@ -1,0 +1,63 @@
+.sidebar {
+    background-color: #601E23;
+    @apply absolute md:relative text-white min-h-screen w-screen md:w-96 absolute md:relative z-50 flex flex-col transition-all duration-500 -left-full md:left-0
+}
+
+.sidebar-open .sidebar {
+    @apply left-0
+}
+
+.sidebar-toggle {
+    background-color: #601E23;
+    @apply w-screen md:hidden text-white text-2xl;
+    line-height: 2.5rem;
+}
+
+.sidebar-toggle > a {
+    @apply p-3 transition-colors duration-500;
+}
+
+.sidebar-open .sidebar-toggle > a {
+    color: #601E23;
+    background-color: #fff;
+}
+
+.sidebar-logo {
+    @apply w-1/2 md:w-5/12 mx-auto my-3
+}
+
+.sidebar-logo > img {
+    @apply w-full h-auto
+}
+
+.sidebar-content {
+    @apply w-full p-0 pr-1
+}
+
+.sidebar-content ul {
+    @apply pl-3 w-fit
+}
+
+.sidebar-content li {
+    border-radius: 0.2rem;
+    @apply px-1 py-0.5 my-1 text-gray-100 transition-colors duration-100
+}
+
+.sidebar-content li li:hover,
+.sidebar-content li li.active {
+    color: #601E23;
+    @apply bg-white
+}
+
+.sidebar-content a {
+    color: inherit;
+    @apply  w-fit
+}
+
+.sidebar-content > ul > li:not(:last-child) {
+    @apply mb-4
+}
+
+.sidebar-content > ul > li > a {
+    @apply text-sm text-gray-200
+}

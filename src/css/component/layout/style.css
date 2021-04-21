@@ -1,0 +1,8 @@
+@import "sidebar.css";
+@import "content.css";
+
+.page {
+    background-color: #F5F4FA;
+    min-height: calc(100vh - 36px);
+    @apply w-screen overflow-x-hidden md:min-h-screen flex flex-row justify-items-stretch relative
+}

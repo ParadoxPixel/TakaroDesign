@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+select {
+    background-color: #ccc;
+    @apply w-1/2 p-0.5
+}

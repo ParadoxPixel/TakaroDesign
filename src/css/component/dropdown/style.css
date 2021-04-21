@@ -1,0 +1,21 @@
+.dropdown {
+    @apply relative
+}
+
+.dropdown-menu {
+    top: calc(100% + 0.75rem);
+    @apply hidden absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none max-w-5/6-screen
+}
+
+.dropdown-open > .dropdown-menu {
+    @apply block
+}
+
+.dropdown-menu div {
+    width: max-content;
+    @apply py-1
+}
+
+.dropdown-menu a {
+    @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900
+}

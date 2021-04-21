@@ -1,0 +1,25 @@
+{
+  "name": "takaro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss ./src/css/tailwind.css -o ./public/assets/css/tailwind.css",
+    "build:minify": "postcss ./src/css/tailwind.css -o ./public/assets/css/tailwind.css && cleancss -o ./public/assets/css/tailwind.min.css ./public/assets/css/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-import": "^14.0.0",
+    "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "clean-css-cli": "^5.2.0",
+    "postcss-cli": "^8.3.1",
+    "postcss-nested": "^5.0.5"
+  }
+}

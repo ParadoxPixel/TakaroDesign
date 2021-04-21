@@ -1,0 +1,24 @@
+.card {
+    @apply w-full bg-white p-4 shadow-md
+}
+
+.card-title {
+    @apply flex flex-row items-center gap-3
+}
+
+.card-title > img {
+    @apply h-5 w-auto
+}
+
+.card-title > h1 {
+    @apply font-bold text-xl
+}
+
+.card-tags {
+    @apply w-full flex flex-wrap my-1.5 justify-items-stretch gap-1.5
+}
+
+.tag {
+    font-size: 0.7rem;
+    @apply inline-block text-white rounded-full px-2 py-0.5 font-semibold tracking-wide
+}

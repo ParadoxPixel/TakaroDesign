@@ -1,0 +1,15 @@
+.breadcrumb {
+    color: #666;
+    @apply flex overflow-x-auto
+}
+
+.breadcrumb li:not(:first-child) {
+    @apply pl-2 flex items-center
+}
+
+.breadcrumb li:not(:first-child)::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    font-size: 0.75rem;
+    @apply float-left pr-1.5 font-semibold mt-0.5
+}
