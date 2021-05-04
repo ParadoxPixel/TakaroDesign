@@ -1,0 +1,14 @@
+@import "./login.css";
+
+input.form-input {
+    @apply w-full bg-gray-100 rounded-md border-2 border-gray-200 mb-2 p-1
+}
+
+.form-btn {
+    background-color: #601E23;
+    @apply p-2 rounded-md w-full text-center text-white transition-colors duration-150
+}
+
+.form-btn:hover {
+    background-color: #75292f;
+}

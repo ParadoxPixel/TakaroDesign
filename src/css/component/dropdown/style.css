@@ -12,8 +12,7 @@
 }
 
 .dropdown-menu div {
-    width: max-content;
-    @apply py-1
+    @apply py-1 w-full
 }
 
 .dropdown-menu a {

@@ -1,6 +1,6 @@
 .profile {
     color: #666;
-    @apply flex items-center gap-1.5 relative
+    @apply flex items-center gap-1.5 relative cursor-pointer
 }
 
 .profile img {

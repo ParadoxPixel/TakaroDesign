@@ -1,0 +1,14 @@
+.login-page {
+    background: linear-gradient(to bottom right, #601E23, #4a1519);
+    @apply flex w-screen h-screen overflow-hidden justify-center items-center
+}
+
+.login-body {
+    @apply bg-white rounded-md w-11/12 md:w-1/2 shadow-2xl p-4
+}
+
+@media (min-width: 1024px) {
+    .login-body {
+        width: 550px;
+    }
+}

@@ -40,7 +40,7 @@
 
 .sidebar-content li {
     border-radius: 0.2rem;
-    @apply px-1 py-0.5 my-1 text-gray-100 transition-colors duration-100
+    @apply px-1 py-0.5 my-1 text-gray-100 transition-colors duration-100 cursor-pointer
 }
 
 .sidebar-content li li:hover,

@@ -31335,6 +31335,7 @@ select {
 
 .sidebar-content li {
   border-radius: 0.2rem;
+  cursor: pointer;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   padding-left: 0.25rem;
@@ -31462,6 +31463,7 @@ select {
 
 .profile {
   color: #666;
+  cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
@@ -31596,11 +31598,9 @@ select {
 }
 
 .dropdown-menu div {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   padding-top: 0.25rem;
-  padding-bottom: 0.25rem
+  padding-bottom: 0.25rem;
+  width: 100%
 }
 
 .dropdown-menu a:hover {
@@ -31623,6 +31623,68 @@ select {
 .dropdown-menu a:hover {
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+.login-page {
+  background: linear-gradient(to bottom right, #601E23, #4a1519);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw
+}
+
+.login-body {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  padding: 1rem;
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  width: 91.666667%
+}
+
+@media (min-width: 768px) {
+  .login-body {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-body {
+    width: 550px;
+  }
+}
+
+input.form-input {
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-radius: 0.375rem;
+  border-width: 2px;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  width: 100%
+}
+
+.form-btn {
+  background-color: #601E23;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 100%;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 150ms
+}
+
+.form-btn:hover {
+  background-color: #75292f;
 }
 
 @media (min-width: 640px) {
